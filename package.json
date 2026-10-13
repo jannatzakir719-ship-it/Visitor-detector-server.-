@@ -1,0 +1,19 @@
+{
+  "name": "visitor-detector-server",
+  "version": "1.0.0",
+  "description": "Self-hosted server for the Visitor Detector ESP32-CAM project: stores detections (JSON + photos) and pushes a real notification via Firebase Cloud Messaging. No Firebase billing/card required.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.1.0",
+    "multer": "^1.4.5-lts.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
