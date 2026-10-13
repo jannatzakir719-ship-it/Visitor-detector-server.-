@@ -47,7 +47,7 @@ app.get("/health", (req, res) => {
 });
 
 // POST API: Receives JSON data (confidence, message, timestamp) from ESP32
-app.post("/detections", requireApiKey, (req, res) => {
+app.post("/detections", (req, res) => {
   const { confidence, message, deviceId } = req.body;
 
   const detection = {
